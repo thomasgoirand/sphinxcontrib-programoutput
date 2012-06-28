@@ -9,8 +9,7 @@
 
 Sphinx_ extension to insert the output of arbitrary commands into documents.
 
-The extension is available under the terms of the BSD license, see LICENSE_
-for more information.
+The extension is available under the terms of the BSD license.
 
 
 Installation
@@ -20,13 +19,6 @@ This extension requires Sphinx_ 1.1 and at least Python 2.6 or Python 3.2.  It
 is available in the Python Package Index::
 
    pip install sphinxcontrib-programoutput
-
-Alternatively, you can clone the sphinx-contrib_ repository from BitBucket,
-and install the extension directly from the repository::
-
-   hg clone https://bitbucket.org/birkenfeld/sphinx-contrib
-   cd sphinx-contrib/programoutput
-   python setup.py install
 
 
 Usage
@@ -249,10 +241,9 @@ This extension understands the following configuration options:
 Contribution
 ------------
 
-Please contact the author or create an issue in the `issue tracker`_ of the
-sphinx-contrib_ repository, if you have found any bugs or miss some
-functionality (e.g. integration of some other issue tracker).  Patches are
-welcome!
+Please contact the author or create an issue in the `issue tracker`_, if you
+have found any bugs or miss some functionality (e.g. integration of some other
+issue tracker).  Patches are welcome!
 
 .. rubric:: Footnotes
 
@@ -267,7 +258,5 @@ welcome!
 
 
 .. _Sphinx: http://sphinx.pocoo.org/
-.. _sphinx-contrib: https://bitbucket.org/birkenfeld/sphinx-contrib
-.. _issue tracker: https://bitbucket.org/birkenfeld/sphinx-contrib/issues
-.. _LICENSE: https://bitbucket.org/birkenfeld/sphinx-contrib/src/tip/LICENSE
+.. _issue tracker: https://github.com/lunaryorn/sphinxcontrib-programoutput/issues
 .. _format string: http://docs.python.org/library/string.html#formatstrings
