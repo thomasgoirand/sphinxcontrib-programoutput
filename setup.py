@@ -23,13 +23,16 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
+import sys
 import os
 import re
+if sys.version_info[0] < 3:
+    from codecs import open
 
 from setuptools import setup, find_packages
 
 
-with open('README') as stream:
+with open('README.rst', encoding='utf-8') as stream:
     long_desc = stream.read()
 
 
