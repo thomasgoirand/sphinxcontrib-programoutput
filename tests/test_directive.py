@@ -74,11 +74,14 @@ def test_with_spaces(doctree, app):
                  'spam with eggs')
 
 
-@pytest.mark.with_content('.. program-output:: python -V')
+@pytest.mark.with_content("""\
+.. program-output:: python -c 'import sys; sys.stderr.write("spam with eggs")'
+                          """)
 def test_standard_error(doctree, app):
-    output = 'Python {0}.{1}.{2}'.format(*sys.version_info)
+    output = 'spam with eggs'
     assert_output(doctree, output)
-    assert_cache(app, 'python -V', output)
+    cmd = 'python -c \'import sys; sys.stderr.write("spam with eggs")\''
+    assert_cache(app, cmd, output)
 
 
 @pytest.mark.with_content("""\
