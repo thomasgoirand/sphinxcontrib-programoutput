@@ -2,6 +2,9 @@
 sphinxcontrib-programoutput
 ###########################
 
+.. image:: https://secure.travis-ci.org/lunaryorn/sphinxcontrib-programoutput.png
+   :target: http://travis-ci.org/lunaryorn/sphinxcontrib-programoutput
+
 http://sphinxcontrib-programoutput.readthedocs.org
 
 A Sphinx_ extension to literally insert the output of arbitrary commands into
