@@ -240,11 +240,39 @@ This extension understands the following configuration options:
    interpreted, but appear in documentation unchanged.
 
 
+Support
+-------
+
+Please report issues to the `issue tracker`_ if you have trouble or found a bug
+in this extension, but respect the following guidelines:
+
+- Check that the issue has not already been reported.
+- Check that the issue is not already fixed in the ``master`` branch.
+- Open issues with clear title and a detailed description in grammatically
+  correct, complete sentences.
+
+
 Development
 -----------
 
-This extension is developed on Github_.  To contribute, head over to Github,
-fork the repository, read the README_ and send your pull requests.
+The source code is hosted on Github_::
+
+   git clone https://github.com/lunaryorn/sphinxcontrib-programoutput
+
+Please fork the repository and send pull requests with your fixes or features,
+but respect these guidelines:
+
+- Read `how to properly contribute to open source projects on GitHub
+  <http://gun.io/blog/how-to-github-fork-branch-and-pull-request/>`_.
+- Use a topic branch to easily amend a pull request later, if necessary.
+- Write `good commit messages
+  <http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>`_.
+- Squash commits on the topic branch before opening a pull request.
+- Respect :pep:`8` (use `pep8`_ to check your coding style compliance)
+- Add unit tests.
+- Open a `pull request <https://help.github.com/articles/using-pull-requests>`_
+  that relates to but one subject with a clear title and description in
+  grammatically correct, complete sentences.
 
 
 Changelog
@@ -272,3 +300,5 @@ License
 .. _github: https://github.com/lunaryorn/sphinxcontrib-programoutput
 .. _readme: https://github.com/lunaryorn/sphinxcontrib-programoutput/blob/master/README.rst
 .. _format string: http://docs.python.org/library/string.html#formatstrings
+.. _issue tracker: https://github.com/lunaryorn/sphinxcontrib-programoutput/issues
+.. _pep8: http://pypi.python.org/pypi/pep8/
