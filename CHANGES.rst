@@ -1,13 +1,14 @@
 0.8 (in development)
 ====================
 
+- Migrated to GitHub
+
 
 0.7 (Apr 17, 2012)
 ==================
 
-- #28: Added ``cwd`` option to :rst:dir:`program-output`
-- #28: Working directory of executed programs defaults to documentation root
-  now
+- Added ``cwd`` option to :rst:dir:`program-output`
+- Working directory of executed programs defaults to documentation root now
 
 
 0.6 (Jan 07, 2012)
@@ -27,7 +28,7 @@
 - Support ``returncode`` formatting key in
   :confval:`programoutput_prompt_template`
 - Warn on unexpected return codes instead of raising
-  :exc:`~subprocess.CalledProcessError`
+  :py:exc:`~subprocess.CalledProcessError`
 - Turn fatal errors during command into document error messages instead of
   crashing the build
 
@@ -36,7 +37,7 @@
 ====================
 
 - Some source code cleanups
-- #10: Fixed installation instructions in documentation
+- Fixed installation instructions in documentation
 
 
 0.4 (May 21, 2010)
