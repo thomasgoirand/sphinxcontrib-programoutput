@@ -9,16 +9,17 @@
 
 Sphinx_ extension to insert the output of arbitrary commands into documents.
 
-The extension is available under the terms of the BSD license.
+The extension is available under the terms of the :ref:`BSD license <license>`.
 
 
 Installation
 ------------
 
-This extension requires Sphinx_ 1.1 and at least Python 2.6 or Python 3.2.  It
-is available in the Python Package Index::
+Use ``pip`` to install this extension from the Cheeseshop_::
 
    pip install sphinxcontrib-programoutput
+
+The extension requires Sphinx 1.1 and Python 2.6 or Python 3.1 at least.
 
 
 Usage
@@ -158,7 +159,8 @@ should the command return 0!
    If ``shell`` is set however, most of these fatal errors are handled by the
    system shell and turned into return codes instead.  In this case the error
    message will only appear in the output of the shell.  If you're using
-   ``shell``, double-check the output for errors.  Best avoid ``shell``, if possible.
+   ``shell``, double-check the output for errors.  Best avoid ``shell``, if
+   possible.
 
 
 Reference
@@ -238,25 +240,35 @@ This extension understands the following configuration options:
    interpreted, but appear in documentation unchanged.
 
 
-Contribution
-------------
+Development
+-----------
 
-Please contact the author or create an issue in the `issue tracker`_, if you
-have found any bugs or miss some functionality (e.g. integration of some other
-issue tracker).  Patches are welcome!
+This extension is developed on Github_.  To contribute, head over to Github,
+fork the repository, read the README_ and send your pull requests.
+
+
+Changelog
+---------
+
+.. include:: ../CHANGES.rst
+
+
+.. _license:
+
+License
+-------
+
+.. literalinclude:: ../LICENSE
+
 
 .. rubric:: Footnotes
 
 .. [#alias] This directive is just an alias for the :dir:`program-output`
             directive with the ``prompt`` option set.
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   changes.rst
-
 
 .. _Sphinx: http://sphinx.pocoo.org/
-.. _issue tracker: https://github.com/lunaryorn/sphinxcontrib-programoutput/issues
+.. _Cheeseshop: http://pypi.python.org/pypi/sphinxcontrib-programoutput
+.. _github: https://github.com/lunaryorn/sphinxcontrib-programoutput
+.. _readme: https://github.com/lunaryorn/sphinxcontrib-programoutput/blob/master/README.rst
 .. _format string: http://docs.python.org/library/string.html#formatstrings
