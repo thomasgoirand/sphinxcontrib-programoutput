@@ -289,7 +289,7 @@ def test_non_existing_executable(doctree, srcdir):
     srcfile = str(srcdir.join('content').join('doc.rst'))
     assert message['source'] == srcfile
     assert message['line'] == 4
-    if sys.version_info[0] < 3:
+    if sys.version_info[0:2] < (3, 2):
         msgtemplate = ("{0}:4: (ERROR/3) Command {1!r} failed: "
                        "[Errno 2] No such file or directory")
     else:
