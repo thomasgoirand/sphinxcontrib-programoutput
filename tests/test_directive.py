@@ -28,6 +28,7 @@ from __future__ import (print_function, division, unicode_literals,
 
 import os
 import sys
+import platform
 
 import pytest
 from sphinx.errors import SphinxWarning
@@ -315,5 +316,9 @@ def test_non_existing_working_directory(doctree, srcdir):
     if sys.version_info[0:2] == (3, 2):
         # XXX: Python 3.2 breaks the error message here
         filename = 'echo'
-    msg = msgtemplate.format(srcfile, 'echo spam', str(filename))
+    elif platform.python_implementation() == 'PyPy':
+        filename = unicode(filename)
+    else:
+        filename = str(filename)
+    msg = msgtemplate.format(srcfile, 'echo spam', filename)
     assert message.astext() == msg
