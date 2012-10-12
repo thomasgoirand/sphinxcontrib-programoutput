@@ -52,7 +52,7 @@ def read_version_number():
 setup(
     name='sphinxcontrib-programoutput',
     version=read_version_number(),
-    url='http://packages.python.org/sphinxcontrib-programoutput',
+    url='http://sphinxcontrib-programoutput.readthedocs.org/',
     download_url='http://pypi.python.org/pypi/sphinxcontrib-programoutput',
     license='BSD',
     author='Sebastian Wiesner',
