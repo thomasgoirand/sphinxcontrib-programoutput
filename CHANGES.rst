@@ -1,5 +1,5 @@
-0.8 (in development)
-====================
+0.8 (Oct 12, 2012)
+==================
 
 - Migrated to GitHub
 
