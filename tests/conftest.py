@@ -46,7 +46,7 @@ release = '1'
 exclude_patterns = []
 
 pygments_style = 'sphinx'
-html_theme = 'default'
+html_theme = 'basic'
 """
 
 
