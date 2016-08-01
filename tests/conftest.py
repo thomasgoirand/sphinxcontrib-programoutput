@@ -47,6 +47,7 @@ exclude_patterns = []
 
 pygments_style = 'sphinx'
 html_theme = 'basic'
+suppress_warnings = ['app.add_directive']
 """
 
 
